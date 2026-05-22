@@ -9,14 +9,16 @@ pygame.display.set_caption("Вікторина з режимами")
 
 font = pygame.font.SysFont("Arial", 30)
 
-pygame.mixer.music.load("sounds/da-da-net-net (1).mp3")
+pygame.mixer.music.load("sounds/da-da-net-net.mp3")
 pygame.mixer.music.set_volume(0.2)
 pygame.mixer.music.play(-1)
 
-correct_sound = pygame.mixer.Sound("sounds/mellstroy-raduet (mp3cut.net) (1).mp3")
+correct_sound = pygame.mixer.Sound("sounds/mellstroy-raduet (mp3cut.net).mp3")
+correct_sound.set_volume(.3)
 wrong_sound = pygame.mixer.Sound("sounds/otkazano.mp3")
+wrong_sound.set_volume(.8)
 
-win_sound = pygame.mixer.Sound("sounds/mellstroy-raduet (mp3cut.net) (1).mp3")
+win_sound = pygame.mixer.Sound("sounds/mellstroy-raduet (mp3cut.net).mp3")
 lose_sound = pygame.mixer.Sound("sounds/otkazano.mp3")
 
 modes_questions = {
